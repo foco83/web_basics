@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+{% if alumno %}
+<h1>
+  {{ alumno.nombre }}
+</h1>
+Edad: {{ alumno.edad }}
+<br>
+Bio: {{ alumno.bio }}
+<br>
+  {% else %}
+<h3>no se encontro al alumno</h3>
+{% endif%}
+{% endblock %}

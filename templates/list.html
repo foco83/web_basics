@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <ul>
+    {% for alumno in lista %}
+      <li> {{alumno.nombre}}: {{alumno["apodo"]}} </li>
+    {% endfor %}
+  </ul>
+
+  {% if lista|lenght > 10 %}
+{% endblock %}
